@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Ciag Fibonacciego</title>
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+        <script src="skrypt.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="form">
+                <form name="formFib">
+                    Podaj nr wyrazu ciagu:<input type="number" id="tak" name="nr_wyrazu" required>
+                    </br>
+                    <input type="button" value="Oblicz" onclick="oblicz()">
+                    <div class="wynik">
+                        <p id="wartosc"></p>
+                        <p id="czas"></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
