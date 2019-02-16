@@ -5,6 +5,7 @@ function oblicz()
    
     var memofib = function(fibo)
     {       
+        
         var n = 1;
         var m = 1;
         var t = 0;
@@ -37,18 +38,24 @@ function oblicz()
                     else
                     {
                         memofib.cachedResults[fibo] = document.getElementById("wartosc").innerHTML = "Nieznany blad";
-                    }                                  
+                    }                                                    
                 }   
+                         
         return memofib.cachedResults[fibo];
     }
     memofib.cachedResults = {};
     
    memofib(x); 
-    alert(memofib(x));
-
-    var stop = Date.now();
-    var czas = stop - start;
-    document.getElementById("czas").innerHTML = "Czas : "+czas;
+   var start1 = Date.now();
+   memofib(x); 
+   var stop1 = Date.now();
+   var czas1 = stop1 - start1; 
+   
+   var stop = Date.now();
+   var czas = stop - start; 
+   document.getElementById("czas").innerHTML = czas;
+   document.getElementById("czas1").innerHTML = czas1;
+    
 }
 
 
