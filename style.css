@@ -2,11 +2,38 @@ body
 {
 background-color: #222222;
 }
-.form
+.tresc
 {
     background-color: #666666;
     width: 20%;
-    height: 500px;
+    height: 400px;
     margin: auto;
     border: 3px solid black;
+    color: white;
+    font-weight: 600;
+    padding-top: 20px;
+    text-align: center;
+    
 }
+input[type=button] {
+    background-color: #cabebe;
+    border-radius: 40%;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    font-weight:bold;
+    cursor: pointer;
+    background-image: linear-gradient(rgb(223, 210, 210), rgb(61, 61, 53));
+  }
+  input[type=button]:hover { 
+    background-image: linear-gradient(rgb(61, 61, 53),rgb(223, 210, 210) );
+  }
+  .btn
+  {
+    margin-top: 20px;
+  }
+  .wynik
+  {
+      font-size: 24px;
+  }

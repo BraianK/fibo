@@ -4,27 +4,23 @@
         <meta charset="utf-8"/>
         <title>Ciag Fibonacciego</title>
         <link rel="stylesheet" href="style.css" type="text/css"/>
-        <script src="skrypt.js"></script>
+        <script src="skrypt.js"></script>     
     </head>
     <body>
         <script>
         window.onload = memo;
-        function memo(){memofib.cachedResults = {};}
-            
+        function memo(){memofib.cachedResults = {};}         
         </script>
         <div class="container">
-            <div class="form">
-                <form name="formFib">
-                    Podaj nr wyrazu ciagu:<input type="number" id="wyraz" required>
-                    </br>
-                    <input type="button" value="Oblicz" onclick="oblicz()">
+            <div class="tresc">
+                <form>                   
+                    Podaj nr wyrazu ciagu: <input type="number" id="wyraz"/>                                 
+                    <input type="button" class="btn" value="Oblicz" onclick="oblicz()"/>
+                </form>                   
                     <div class="wynik">
                         <p id="wartosc"></p>
-                        <p id="czas"></p>
-                        <p id="czas1"></p>
-                        
-                    </div>
-                </form>
+                        <p id="czas"></p>                     
+                    </div>              
             </div>
         </div>
     </body>

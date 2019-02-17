@@ -1,17 +1,16 @@
 function oblicz()
 {
-    var x = document.getElementById("wyraz").value;  
+    var x = document.getElementById("wyraz").value;
     var start = Date.now(); 
     var fun = memofib(x)
     var stop = Date.now();
     var czas = stop - start;
     document.getElementById("wartosc").innerHTML = "Wynik: "+ fun;
-    document.getElementById("czas").innerHTML = " Czas: "+czas;   
+    document.getElementById("czas").innerHTML = "Czas: "+czas;   
 }
 
 var memofib = function fibo(x)
-{
-    
+{   
     var n = 1;
     var m = 1;
     var t = 0;
@@ -28,8 +27,7 @@ var memofib = function fibo(x)
                 else if(x==1 || x==2)
                 {
                     t = 1;
-                    memofib.cachedResults[x] = t;
-                    
+                    memofib.cachedResults[x] = t;                   
                 }
                 else if(x>2)
                 {           
@@ -45,8 +43,7 @@ var memofib = function fibo(x)
                 {
                     memofib.cachedResults[x] = "Nieznany blad";
                 }                                                    
-        }   
-                   
+        }                
     return memofib.cachedResults[x];
 }
 
